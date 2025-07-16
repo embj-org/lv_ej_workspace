@@ -1,3 +1,6 @@
 [submodule "lvgl"]
 	path = lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "ejlv_builder"]
+	path = ejlv_builder
+	url = https://github.com/AndreCostaaa/ejlv_builder.git
