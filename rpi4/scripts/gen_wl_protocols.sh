@@ -2,7 +2,6 @@
 # Generate wayland xdg shell protocol
 
 OUTPUT_DIR="$1"
-echo "HELLO THERE"
 
 if [ -n "$SDKTARGETSYSROOT" ] && [ -n "$SYSROOT" ]; then
 	echo "Error: Both SDKTARGETSYSROOT and SYSROOT are set. Please set only one."

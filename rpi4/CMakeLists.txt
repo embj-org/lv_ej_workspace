@@ -17,6 +17,8 @@ set(LV_BUILD_SET_CONFIG_OPTS
 
 add_subdirectory(../lvgl ${CMAKE_CURRENT_BINARY_DIR}/lvgl)
 
+set(EXTRA_SOURCE_FILES)
+
 if(CONFIG_LV_USE_SDL)
   message("Including SDL2 support")
 
@@ -54,7 +56,7 @@ if(CONFIG_LV_USE_WAYLAND)
   string(REPLACE "\n" ";" WAYLAND_PROTOCOLS_SRC "${WAYLAND_PROTOCOLS_SRC}")
 
   list(APPEND PKG_CONFIG_INC "${CMAKE_CURRENT_BINARY_DIR}/protocols")
-
+  list(APPEND EXTRA_SOURCE_FILES "${WAYLAND_PROTOCOLS_SRC}")
 endif()
 
 target_include_directories(lvgl PUBLIC ${PKG_CONFIG_INC})
@@ -68,7 +70,7 @@ else()
   message(FATAL_ERROR "Invalid config")
 endif()
 
-add_executable(${TARGET_NAME} src/main.c)
+add_executable(${TARGET_NAME} src/main.c ${EXTRA_SOURCE_FILES})
 target_include_directories(${TARGET_NAME} PRIVATE ../lvgl/demos ../lvgl)
 target_link_libraries(${TARGET_NAME} lvgl)
 set_target_properties(${TARGET_NAME} PROPERTIES COMPILE_DEFINITIONS
