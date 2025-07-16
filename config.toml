@@ -10,25 +10,25 @@ name = "rpi4-wayland"
 tags = ["arm64", "sw", "wayland"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
-results_path = "changeme/rpi4-wayland.txt"
-library_path = "changeme/lvgl"
+results_path = "/media/pi/pi_external/lv_ej_workspace/results-rpi4-wayland"
+library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "rpi4-sdl"
 tags = ["arm64", "sw", "sdl"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
-results_path = "changeme/rpi4-sdl.txt"
-library_path = "changeme/lvgl"
+results_path = "/media/pi/pi_external/lv_ej_workspace/results-rpi4-sdl"
+library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
 
 [[boards]]
 name = "esp32s3"
 description = "ESP32-S3-LCD-EV-Board"
 
 [[boards.configs]]
-name = "esp32s3-normal"
+name = "esp32s3"
 tags = ["esp32s3", "sw"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
-results_path = "/media/pi/pi_external/lv_ej_workspace/esp32s3-normal.txt"
+results_path = "/media/pi/pi_external/lv_ej_workspace/results-esp32s3"
 library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
