@@ -15,6 +15,7 @@ int main(void)
 	lv_sdl_window_create(1920, 1080);
 #elif LV_USE_WAYLAND
 	lv_wayland_window_create(1920, 1080, "EJ LVGL Benchmark", NULL);
+	lv_wayland_window_set_maximized(disp, true);
 #endif
 
 	lv_demo_benchmark_set_end_cb(on_benchmark_end);
