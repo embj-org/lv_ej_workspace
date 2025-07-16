@@ -20,3 +20,15 @@ build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "changeme/rpi4-sdl.txt"
 library_path = "changeme/lvgl"
+
+[[boards]]
+name = "esp32s3"
+description = "ESP32-S3-LCD-EV-Board"
+
+[[boards.configs]]
+name = "esp32s3-normal"
+tags = ["esp32s3", "sw"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/media/pi/pi_external/lv_ej_workspace/esp32s3-normal.txt"
+library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
