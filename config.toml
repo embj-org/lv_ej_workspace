@@ -1,0 +1,22 @@
+[global]
+version = "1.0.0"
+
+[[boards]]
+name = "rpi4"
+description = "Raspberry Pi 4 Model B"
+
+[[boards.configs]]
+name = "rpi4-wayland"
+tags = ["arm64", "sw", "wayland"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "changeme/rpi4-wayland.txt"
+library_path = "changeme/lvgl"
+
+[[boards.configs]]
+name = "rpi4-sdl"
+tags = ["arm64", "sw", "sdl"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "changeme/rpi4-sdl.txt"
+library_path = "changeme/lvgl"
