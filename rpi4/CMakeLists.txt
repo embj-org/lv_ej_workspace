@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(rpi3-sdl)
+project(rpi4-sdl)
 
 cmake_policy(SET CMP0079 NEW)
 
@@ -8,7 +8,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Werror -Wall -Wextra -Wpedantic")
 
 set(LV_BUILD_SET_CONFIG_OPTS
@@ -63,9 +62,9 @@ target_include_directories(lvgl PUBLIC ${PKG_CONFIG_INC})
 target_link_libraries(lvgl PUBLIC ${PKG_CONFIG_LIB} m)
 
 if(CONFIG_LV_USE_SDL)
-  set(TARGET_NAME "rpi3-sdl")
+  set(TARGET_NAME "rpi4-sdl")
 elseif(CONFIG_LV_USE_WAYLAND)
-  set(TARGET_NAME "rpi3-wayland")
+  set(TARGET_NAME "rpi4-wayland")
 else()
   message(FATAL_ERROR "Invalid config")
 endif()
