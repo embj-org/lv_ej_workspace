@@ -1,0 +1,16 @@
+[Unit]
+Description=EJB
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/ejb/ejb.env
+ExecStart=/home/pi/.cargo/bin/ejb --config ${EJB_CONFIG_PATH} connect --server ${EJB_SERVER}
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
