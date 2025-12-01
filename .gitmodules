@@ -4,3 +4,6 @@
 [submodule "ejlv_builder"]
 	path = ejlv_builder
 	url = https://github.com/embj-org/ejlv_builder.git
+[submodule "lv_port_linux"]
+	path = lv_port_linux
+	url = https://github.com/lvgl/lv_port_linux.git

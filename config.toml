@@ -1,25 +1,6 @@
 [global]
 version = "1.0.0"
 
-[[boards]]
-name = "rpi4"
-description = "Raspberry Pi 4 Model B"
-
-[[boards.configs]]
-name = "rpi4-wayland"
-tags = ["arm64", "sw", "wayland"]
-build_script = "ejlv_builder"
-run_script = "ejlv_builder"
-results_path = "/media/pi/pi_external/lv_ej_workspace/results-rpi4-wayland"
-library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
-
-[[boards.configs]]
-name = "rpi4-sdl"
-tags = ["arm64", "sw", "sdl"]
-build_script = "ejlv_builder"
-run_script = "ejlv_builder"
-results_path = "/media/pi/pi_external/lv_ej_workspace/results-rpi4-sdl"
-library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
 
 [[boards]]
 name = "esp32s3"
@@ -30,5 +11,96 @@ name = "esp32s3"
 tags = ["esp32s3", "sw"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
-results_path = "/media/pi/pi_external/lv_ej_workspace/results-esp32s3"
-library_path = "/media/pi/pi_external/lv_ej_workspace/lvgl"
+results_path = "/home/lvgl/lv_ej_workspace/results-esp32s3"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
+
+
+[[boards]]
+name = "Renesas RZ/G3E"
+description = "Renesas RZ/G3E MPU"
+
+[[boards.configs]]
+name = "drm-egl-2d"
+tags = ["Renesas", "sw", "drm", "egl"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+[[boards.configs]]
+name = "drm-egl-3d"
+tags = ["Renesas", "sw", "drm", "egl"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+[[boards.configs]]
+name = "fbdev"
+tags = ["Renesas", "sw", "fbdev"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+[[boards.configs]]
+name = "wayland"
+tags = ["Renesas", "wayland"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+
+[[boards]]
+name = "SER8"
+description = "SER8 x86 PC build server"
+
+[[boards.configs]]
+name = "glfw"
+tags = ["x86", "sw", "glfw"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+[[boards.configs]]
+name = "glfw-3d"
+tags = ["x86", "sw", "glfw"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+[[boards.configs]]
+name = "sdl"
+tags = ["x86", "sw", "sdl"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
+library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+
+
+[[boards]]
+name = "stm32u5g9"
+description = "STM32U5G9J-DK2 devboard"
+
+[[boards.configs]]
+name = "ltdc-ltdcdma2dflush-nema-nemavg-16"
+tags = ["stm32", "ltdc", "nema", "nemavg"]
+build_script = "/home/lvgl/lv_ej_workspace/lv_port_stm32u5g9j-dk2/ej_build_script.sh"
+run_script = "/home/lvgl/lv_ej_workspace/lv_port_stm32u5g9j-dk2/ej_run_script.sh"
+results_path = "/home/lvgl/lv_ej_workspace/results-stm32u5g9"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
+
+[[boards.configs]]
+name = "ltdc-dma2d-16"
+tags = ["stm32", "ltdc", "dma2d"]
+build_script = "/home/lvgl/lv_ej_workspace/lv_port_stm32u5g9j-dk2/ej_build_script.sh"
+run_script = "/home/lvgl/lv_ej_workspace/lv_port_stm32u5g9j-dk2/ej_run_script.sh"
+results_path = "/home/lvgl/lv_ej_workspace/results-stm32u5g9"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
+
+
+# eve
+
