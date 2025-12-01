@@ -33,7 +33,7 @@ tags = ["Renesas", "sw", "drm", "egl"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "drm-egl-3d"
@@ -41,7 +41,7 @@ tags = ["Renesas", "sw", "drm", "egl"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "fbdev"
@@ -49,7 +49,7 @@ tags = ["Renesas", "sw", "fbdev"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "wayland"
@@ -57,7 +57,7 @@ tags = ["Renesas", "wayland"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-renesas-rzg3e"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 
 [[boards]]
@@ -70,7 +70,7 @@ tags = ["x86", "sw", "glfw"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "glfw-3d"
@@ -78,7 +78,7 @@ tags = ["x86", "sw", "glfw"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 [[boards.configs]]
 name = "sdl"
@@ -86,7 +86,7 @@ tags = ["x86", "sw", "sdl"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-ser8"
-library_path = "/home/lvgl/lv_ej_workspace/lv_port_linux/lvgl"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
 
 [[boards]]
