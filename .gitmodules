@@ -8,3 +8,6 @@
 	path = lv_port_linux
 	url = https://github.com/lvgl/lv_port_linux.git
 	branch = ej-workspace
+[submodule "lvgl-master"]
+	path = lvgl-master
+	url = https://github.com/lvgl/lvgl.git
