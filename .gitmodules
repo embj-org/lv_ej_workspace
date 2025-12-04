@@ -11,3 +11,12 @@
 [submodule "lvgl-master"]
 	path = lvgl-master
 	url = https://github.com/lvgl/lvgl.git
+[submodule "lv_nuttx"]
+	path = lv_nuttx
+	url = https://github.com/liamHowatt/lv_nuttx
+[submodule "eve"]
+	path = eve
+	url = https://github.com/liamHowatt/lv_esp_idf.git
+[submodule "lv_port_stm32u5g9j-dk2"]
+	path = lv_port_stm32u5g9j-dk2
+	url = https://github.com/liamHowatt/lv_port_stm32u5g9j-dk2.git

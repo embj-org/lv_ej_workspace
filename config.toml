@@ -22,6 +22,14 @@ run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-esp32s3"
 library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 
+[[boards.configs]]
+name = "nuttx"
+tags = ["esp32s3", "nuttx"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-esp32s3"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
+
 
 [[boards]]
 name = "Renesas RZ/G3E"
@@ -104,6 +112,14 @@ library_path = "/home/lvgl/lv_ej_workspace/lvgl"
 [[boards.configs]]
 name = "ltdc-dma2d-16"
 tags = ["stm32", "ltdc", "dma2d"]
+build_script = "ejlv_builder"
+run_script = "ejlv_builder"
+results_path = "/home/lvgl/lv_ej_workspace/results-stm32u5g9"
+library_path = "/home/lvgl/lv_ej_workspace/lvgl"
+
+[[boards.configs]]
+name = "ltdc-mipi-ft81x-16"
+tags = ["stm32", "ltdc", "mipi", "ft81x"]
 build_script = "ejlv_builder"
 run_script = "ejlv_builder"
 results_path = "/home/lvgl/lv_ej_workspace/results-stm32u5g9"
